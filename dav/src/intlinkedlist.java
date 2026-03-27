@@ -102,20 +102,20 @@ public class intlinkedlist {
 
     public int getFirst() {
         if (isEmpty()) {
-            throw new NoSuchElementException("List is empty");
+            throw new NoSuchElementException("list is empty");
         }
         return head.value;
     }
 
     public int getLast() {
         if (isEmpty()) {
-            throw new NoSuchElementException("List is empty");
+            throw new NoSuchElementException("list is empty");
         }
         return tail.value;
     }
     private void checkIndex(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index);
+            throw new IndexOutOfBoundsException(+ index);
         }
     }
 }
